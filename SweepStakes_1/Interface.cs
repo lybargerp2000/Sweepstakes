@@ -8,5 +8,7 @@ namespace SweepStakes_1
 {
     class Interface
     {
+
+        string name;
     }
 }
