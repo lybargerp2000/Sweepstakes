@@ -10,7 +10,7 @@ namespace SweepStakes_1
     {
      public Sweepstakes()
         {
-            SweepstakesDictionary dictionary = new SweepstakesDictionary();
+            //SweepstakesDictionary dictionary = new SweepstakesDictionary();
 
         }
 
@@ -19,11 +19,11 @@ namespace SweepStakes_1
          
         }
 
-        public void RegisterContestant(Contestant contestant)
+        public void RegisterContestant(Contestant contestants)
         {
-            Dictionary<string, string> contestant = new Dictionary<string, string>();
-            contestant.Add("","");
-            foreach (KeyValuePair<string, string> pair in contestant)
+            Dictionary<int, string> contestant = new Dictionary<int, string>();
+            contestant.Add(0,"");
+            foreach (KeyValuePair<int, string> pair in contestant)
             {
                 Console.WriteLine(pair.Key + "-" + pair.Value);
             }

@@ -13,8 +13,9 @@ namespace SweepStakes_1
 
         {
            
-            string userInput;
+            //string userInput;
             Console.WriteLine("Choose Stack or Queue");
+            return true;
             //if (userInput = (Console.ReadLine("Queue"))
         }
 
