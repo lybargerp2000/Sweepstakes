@@ -23,7 +23,7 @@ namespace SweepStakes_1
 
             //Dictionary
             //Console.WriteLine("Dictionary");
-            Dictionary dictionary = new Dictionary();
+            SweepstakesDictionary dictionary = new SweepstakesDictionary();
             //dictionary.DisplayAnimalCategorization();
             //dictionary.DisplayMonthSeason();
             //dictionary.DisplayEmployeeIdName();

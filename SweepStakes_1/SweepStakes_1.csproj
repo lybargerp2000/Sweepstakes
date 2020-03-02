@@ -44,8 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contestant.cs" />
-    <Compile Include="Dictionary.cs" />
+    <Compile Include="SweepstakesDictionary.cs" />
     <Compile Include="ISweepstakesManager.cs" />
+    <Compile Include="SeepstakesQueeManager.cs" />
     <Compile Include="Sweepstakes.cs" />
     <Compile Include="SweepstakesStackManager.cs" />
     <Compile Include="UserInterface.cs" />

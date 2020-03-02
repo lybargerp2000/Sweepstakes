@@ -16,6 +16,7 @@ namespace SweepStakes_1
 
         public Contestant()
         {
+            firstName = "Gary";
            
 
         }

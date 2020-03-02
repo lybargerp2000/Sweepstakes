@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace SweepStakes_1
 {
+    
     public static class UserInterface
     {
 
        
         
-     public static string AssignContestant(string Contestant)
+     public static string AssignContestant(Contestant contestant)
         {
-            Contestant = firstName;
+            
         }
     }
 }

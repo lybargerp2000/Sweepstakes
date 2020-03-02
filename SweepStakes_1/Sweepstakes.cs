@@ -10,7 +10,7 @@ namespace SweepStakes_1
     {
      public Sweepstakes()
         {
-            Dictionary dictionary = new Dictionary();
+            SweepstakesDictionary dictionary = new SweepstakesDictionary();
 
         }
 
