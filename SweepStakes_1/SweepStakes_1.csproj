@@ -43,7 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface.cs" />
+    <Compile Include="Contestant.cs" />
+    <Compile Include="Dictionary.cs" />
+    <Compile Include="ISweepstakesManager.cs" />
+    <Compile Include="Sweepstakes.cs" />
+    <Compile Include="SweepstakesStackManager.cs" />
+    <Compile Include="UserInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

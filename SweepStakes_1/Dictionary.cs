@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace SweepStakes_1
 {
-    class Interface
+    public class Dictionary
     {
-
-        string name;
     }
 }
