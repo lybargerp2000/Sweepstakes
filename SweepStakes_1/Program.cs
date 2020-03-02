@@ -20,10 +20,12 @@ namespace SweepStakes_1
     {
         static void Main(string[] args)
         {
+            SweepstakesStackManager sweepstakes = new SweepstakesStackManager();
+            MarketingFirm marketingFirm = new MarketingFirm(sweepstakes);
 
             //Dictionary
             //Console.WriteLine("Dictionary");
-            SweepstakesDictionary dictionary = new SweepstakesDictionary();
+            //SweepstakesDictionary dictionary = new SweepstakesDictionary();
             //dictionary.DisplayAnimalCategorization();
             //dictionary.DisplayMonthSeason();
             //dictionary.DisplayEmployeeIdName();

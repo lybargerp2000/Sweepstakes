@@ -12,7 +12,12 @@ namespace SweepStakes_1
         {
             Dictionary<string, string> contestant = new Dictionary<string, string>();
             contestant.Add("Gary", "Johnson");
+            foreach (KeyValuePair<string, string> pair in contestant)
+            {
+                Console.WriteLine(pair.Key + "-" + pair.Value);
+            }
         }
+        
 
     }
 }
