@@ -19,8 +19,14 @@ namespace SweepStakes_1
          
         }
 
-        public void RegisterCintestant(Contestant contestant)
+        public void RegisterContestant(Contestant contestant)
         {
+            Dictionary<string, string> contestant = new Dictionary<string, string>();
+            contestant.Add("","");
+            foreach (KeyValuePair<string, string> pair in contestant)
+            {
+                Console.WriteLine(pair.Key + "-" + pair.Value);
+            }
 
         }
 
@@ -29,7 +35,7 @@ namespace SweepStakes_1
          
         }
 
-        public void PrintCintestantInfo(Contestant contestant)
+        public void PrintContestantInfo(Contestant contestant)
         {
 
         }

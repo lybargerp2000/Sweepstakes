@@ -16,7 +16,10 @@ namespace SweepStakes_1
 
         public Contestant()
         {
-            firstName = "Gary";
+            firstName = "";
+            lastName = "";
+            emailAddress= "";
+            registrationNumber = 0;
            
 
         }
