@@ -13,10 +13,6 @@ namespace SweepStakes_1
         {
             Console.WriteLine("Select Stack or Queue");
             return Console.ReadLine();
-
-
-           
-
         }
         public static string PickSweepstakesName()
         {

@@ -32,10 +32,6 @@ namespace SweepStakes_1
         {
             Console.WriteLine("Email Address: " + contestant.EmailAddress + " First Name: " + contestant.FirstName + "Last Name: " + contestant.LastName + "Registration Number: " + contestant.RegistrationNumber);
         }
-
-
-
     }
-
 
 }
