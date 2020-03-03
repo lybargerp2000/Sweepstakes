@@ -13,8 +13,8 @@ namespace SweepStakes_1
         public MarketingFirm(ISweepstakesManager Sweepstakes)
         {
             this.Sweepstakes = Sweepstakes;
-            Sweepstakes.InsertSweepstakes();
-            Sweepstakes.SweepstakesGetSweepstakes();
+            //Sweepstakes.InsertSweepstakes();
+            //Sweepstakes.GetSweepstakes();
 
             //As per User Stories
             //Sweepstakes sweepstakes = new Sweepstakes();

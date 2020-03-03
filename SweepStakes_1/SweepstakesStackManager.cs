@@ -8,15 +8,15 @@ namespace SweepStakes_1
 {
     public class SweepstakesStackManager : ISweepstakesManager
     {
-        int numberOfSweepstakes;
-        string ChoosenSweepstakes;
+        //int numberOfSweepstakes;
+        //string ChoosenSweepstakes;
         Stack<Sweepstakes> stack;
         //string nameOfSweepstakes;
      public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             
             stack.Push(sweepstakes);
-            numberOfSweepstakes++;
+            //numberOfSweepstakes++;
 
             //Console.WriteLine("Elements in stack: ");
             //foreach (string name in stack)
@@ -35,10 +35,11 @@ namespace SweepStakes_1
            
         }
 
-     public   Sweepstakes GetSweepstakes()
+     public void GetSweepstakes()
         {
 
-            return stack.Pop();
+            stack.Pop();
+            return;
             
 
         }
