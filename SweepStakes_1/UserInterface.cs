@@ -9,6 +9,14 @@ namespace SweepStakes_1
     
     public static class UserInterface
     {
+        public static string PickSweepstakesName()
+        {
+            string userInput;
+            Console.WriteLine("Choose name for Sweepstakes");
+            userInput = Console.ReadLine();
+            return userInput;
+
+        }
         public static bool ChooseStackOrQueue()
 
         {

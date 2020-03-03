@@ -10,7 +10,7 @@ namespace SweepStakes_1
     {
      public void InsertSweepstakes()
         {
-            Stack<string> stack = new Stack<string>();
+            Stack<int> stack = new Stack<int>();
 
             //stack.Push("Gary");
         }
