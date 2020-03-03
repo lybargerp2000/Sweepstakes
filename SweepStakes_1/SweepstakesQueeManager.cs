@@ -15,7 +15,7 @@ namespace SweepStakes_1
             
         }
         
-        public void GetSweepstakes()
+        public Sweepstakes GetSweepstakes()
         {
             queue.Dequeue();
             return;

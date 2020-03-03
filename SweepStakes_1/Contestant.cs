@@ -9,7 +9,7 @@ namespace SweepStakes_1
     public abstract class Contestant
     {
         //These are established in User Stories
-        public string firstName;
+        public string FirstName;
         public string lastName;
         public string emailAddress;
         public int registrationNumber;

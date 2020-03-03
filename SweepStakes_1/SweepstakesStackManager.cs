@@ -12,26 +12,10 @@ namespace SweepStakes_1
         //string ChoosenSweepstakes;
         Stack<Sweepstakes> stack;
         //string nameOfSweepstakes;
-     public void InsertSweepstakes(Sweepstakes sweepstakes)
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             
             stack.Push(sweepstakes);
-            //numberOfSweepstakes++;
-
-            //Console.WriteLine("Elements in stack: ");
-            //foreach (string name in stack)
-            //{
-            //    Console.WriteLine(name);
-            //}
-            //string topOfStack = stack.Pop();
-            //stack.Push(sweepstakes.nameOfSweepstakes);
-
-            //Console.WriteLine("Elements in stack after Pop and Push(nameOfSweepstakes): ");
-            //foreach (string name in stack)
-            //{
-            //    Console.WriteLine(name);
-            //    return;
-            //}
            
         }
 

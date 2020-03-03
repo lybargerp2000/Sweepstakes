@@ -8,37 +8,39 @@ namespace SweepStakes_1
 {
     public class Sweepstakes
     {
-        public string nameOfSweepstakes;
+        public string name;
         Random random = new Random();
-        public int contestantNumber;
-        int contestantWinner;
-        string contestantName;
-     public Sweepstakes()
+        Dictionary<int, Contestant> contestants;
+        //public int contestantNumber;
+        //int contestantWinner;
+        //string contestantName;
+        public Sweepstakes()
         {
-            //SweepstakesDictionary dictionary = new SweepstakesDictionary();
+            contestants = new Dictionary<int, Contestant>();
+
 
         }
 
-        public void SweepStakes(string name)
-        {
-            nameOfSweepstakes = UserInterface.PickSweepstakesName();
-        }
+        //public void SweepStakes(string name)
+        //{
+        //    nameOfSweepstakes = UserInterface.PickSweepstakesName();
+        //}
 
-        public void RegisterContestant(Contestant contestants)
+        public void RegisterContestant(Contestant contestant)
         {
             
-            Dictionary<int, string> contestant = new Dictionary<int, string>();
-            contestant.Add(contestantNumber,contestantName);
-            foreach (KeyValuePair<int, string> pair in contestant)
-            {
-                Console.WriteLine(pair.Key + " - " + pair.Value);
-            }
+            
+            contestants.Add(contestant.registrationNumber, contestant);
+            //foreach (KeyValuePair<int, string> pair in contestant)
+            //{
+            //    Console.WriteLine(pair.Key + " - " + pair.Value);
+            //}
 
         }
 
-        public void ContestantPickWinner()
+        public void PickWinner()
         {
-            contestantWinner = random.Next(contestantNumber, contestantNumber);
+            //contestantWinner = random.Next(contestantNumber, contestantNumber);
             return;
          
          
@@ -46,7 +48,7 @@ namespace SweepStakes_1
 
         public void PrintContestantInfo(Contestant contestant)
         {
-         
+            Console.WriteLine(contestant);
 
         }
 
