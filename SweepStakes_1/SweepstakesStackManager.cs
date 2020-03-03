@@ -19,11 +19,11 @@ namespace SweepStakes_1
            
         }
 
-     public void GetSweepstakes()
+     public Sweepstakes GetSweepstakes()
         {
 
-            stack.Pop();
-            return;
+            return stack.Pop();
+            
             
 
         }

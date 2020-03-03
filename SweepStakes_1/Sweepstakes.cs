@@ -18,7 +18,6 @@ namespace SweepStakes_1
         {
             contestants = new Dictionary<int, Contestant>();
 
-
         }
 
         //public void SweepStakes(string name)
@@ -28,27 +27,33 @@ namespace SweepStakes_1
 
         public void RegisterContestant(Contestant contestant)
         {
+            contestants.Add(contestant.RegistrationNumber, contestant);
             
-            
-            contestants.Add(contestant.registrationNumber, contestant);
-            //foreach (KeyValuePair<int, string> pair in contestant)
-            //{
-            //    Console.WriteLine(pair.Key + " - " + pair.Value);
-            //}
-
         }
 
-        public void PickWinner()
+        public Contestant PickWinner()
         {
+            
+            return contestants[random.Next()];
+            
+            //foreach (KeyValuePair<int, string> item in contestants)
+            //{
+            //    Console.WriteLine(item.Key, item.Value);
+            //}
             //contestantWinner = random.Next(contestantNumber, contestantNumber);
-            return;
+            
          
          
         }
 
         public void PrintContestantInfo(Contestant contestant)
         {
-            Console.WriteLine(contestant);
+            for(int i = 0; i < contestants.Count; i++)
+            {
+                Console.WriteLine(contestants.Keys.ElementAt(i));
+            }
+            
+            //Console.WriteLine(contestant);
 
         }
 
