@@ -8,9 +8,9 @@ namespace SweepStakes_1
 {
     public class Sweepstakes
     {
-        string nameOfSweepstakes;
+        public string nameOfSweepstakes;
         Random random = new Random();
-        int contestantNumber;
+        public int contestantNumber;
         int contestantWinner;
         string contestantName;
      public Sweepstakes()
