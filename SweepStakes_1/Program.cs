@@ -20,15 +20,21 @@ namespace SweepStakes_1
     {
         static void Main(string[] args)
         {
-            SweepstakesStackManager sweepstakes = new SweepstakesStackManager();
-            MarketingFirm marketingFirm = new MarketingFirm(sweepstakes);
+            ISweepstakesManager manager = null;
+            string choice = UserInterface.PickStackOrQueu();
+            switch (choice)
+            {
+                case "Stack":
+                    manager = new SweepstakesStackManager();
+                    break;
 
-            //Dictionary
-            //Console.WriteLine("Dictionary");
-            //SweepstakesDictionary dictionary = new SweepstakesDictionary();
-            //dictionary.DisplayAnimalCategorization();
-            //dictionary.DisplayMonthSeason();
-            //dictionary.DisplayEmployeeIdName();
+                case "Queue":
+                    manager = new SweepstakesQueeManager();
+
+                    break;
+
+            }
+            MarketingFirm marketingFirm = new MarketingFirm(manager);
         }
     }
 }

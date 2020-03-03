@@ -9,22 +9,12 @@ namespace SweepStakes_1
     
     public static class UserInterface
     {
-        public static void PickStackOrQueu()
+        public static string PickStackOrQueu()
         {
             Console.WriteLine("Select Stack or Queue");
-            string choice = Console.ReadLine();
+            return Console.ReadLine();
 
-            switch (choice)
-            {
-                case "Stack":
-                    Console.WriteLine("Stack");
-                    break;
-                    
-                case "Queue":
-                    Console.WriteLine("Queue");
-                    break;
 
-            }
            
 
         }
@@ -36,12 +26,5 @@ namespace SweepStakes_1
          
         }
 
-       
-
-        
-     //public static string AssignContestant(Contestant contestant)
-     //   {
-            
-     //   }
     }
 }

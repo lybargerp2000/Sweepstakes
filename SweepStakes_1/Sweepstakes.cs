@@ -11,19 +11,11 @@ namespace SweepStakes_1
         public string name;
         Random random = new Random();
         Dictionary<int, Contestant> contestants;
-        //public int contestantNumber;
-        //int contestantWinner;
-        //string contestantName;
         public Sweepstakes()
         {
             contestants = new Dictionary<int, Contestant>();
 
         }
-
-        //public void SweepStakes(string name)
-        //{
-        //    nameOfSweepstakes = UserInterface.PickSweepstakesName();
-        //}
 
         public void RegisterContestant(Contestant contestant)
         {
@@ -33,28 +25,12 @@ namespace SweepStakes_1
 
         public Contestant PickWinner()
         {
-            
-            return contestants[random.Next()];
-            
-            //foreach (KeyValuePair<int, string> item in contestants)
-            //{
-            //    Console.WriteLine(item.Key, item.Value);
-            //}
-            //contestantWinner = random.Next(contestantNumber, contestantNumber);
-            
-         
-         
+            return contestants[random.Next(contestants.Count)];
         }
 
         public void PrintContestantInfo(Contestant contestant)
         {
-            for(int i = 0; i < contestants.Count; i++)
-            {
-                Console.WriteLine(contestants.Keys.ElementAt(i));
-            }
-            
-            //Console.WriteLine(contestant);
-
+            Console.WriteLine("Email Address: " + contestant.EmailAddress + " First Name: " + contestant.FirstName + "Last Name: " + contestant.LastName + "Registration Number: " + contestant.RegistrationNumber);
         }
 
 

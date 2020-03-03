@@ -9,61 +9,11 @@ namespace SweepStakes_1
     public abstract class Contestant
     {
         
-        private string firstName;
-        private string lastName;
-        private string emailAddress;
-        private int registrationNumber;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string EmailAddress { get; set; }
+        public int RegistrationNumber { get; set; }
 
-        public string FirstName
-        {
-            get
-            {
-                return firstName;
-            }
-            set
-            {
-                firstName = value;
-            }
-        }
-        public string LastName
-        {
-            get
-            {
-                return lastName;
-            }
-            set
-            {
-                lastName = value;
-            }
-        }
-        public string EmailAddress
-        {
-            get
-            {
-                return emailAddress;
-            }
-            set
-            {
-                emailAddress = value;
-            }
-        }
-        public int RegistrationNumber
-        {
-            get
-            {
-                return registrationNumber;
-            }
-            set
-            {
-                registrationNumber = value;
-            }
-        }
-
-
-        public Contestant()
-        {
-           
-        }
     }
 
 }
